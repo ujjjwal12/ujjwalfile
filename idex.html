@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <title>Hello, world!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #Home {
+        background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(blissssss.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .about-text h2 {
+        color: white;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+
+
+    #home,
+    a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 13px 35px;
+        font-weight: 600;
+    }
+
+    #home,
+    .btn {
+        margin-top: 30px;
+    }
+
+    #home,
+    a.blue {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: 0.3 ease;
+    }
+
+
+    #hom,
+    a.yellow {
+        color: rgb(255, 255, 255);
+        background-color: rgb(25, 163, 173);
+        transition: 0.3 ease;
+    }
+
+    #featuers h1,
+    x {
+        padding: 5vw 8vw 0 8vw;
+        text-align: center;
+        color: rgb(25, 163, 173);
+
+    }
+
+    #featuers h5 {
+        text-align: center;
+        color: black
+    }
+
+    .feature-card {
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navbar-brand h1 {
+        font-weight: 900;
+        font-size: xx-large;
+    }
+
+    .course-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        background-color: rgb(14, 219, 255);
+    }
+
+    /* Basic styling for the course cards */
+    .course-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the course cards */
+    .course-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Styling for course titles */
+    .course-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Styling for course descriptions */
+    .course-description {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Styling for course prices */
+    .course-price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #007BFF;
+        margin-top: 10px;
+    }
+
+    .feature-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Styling for the feature cards */
+    .feature-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+    }
+
+    /* Hover effect for the feature cards */
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Styling for feature icons */
+    .feature-icon {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    /* Styling for feature titles */
+    .feature-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Styling for feature descriptions */
+    .feature-description {
+        font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+        .feature-cards {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .feature-card {
+            flex: 1;
+            max-width: calc(33.33% - 20px);
+        }
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    /* Gallery section styles */
+    .gallery-section {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gallery-item {
+        flex: 0 0 calc(33.33% - 20px);
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Slider section styles */
+    .slider-section {
+        background-color: #00c3ff;
+        ;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .slider-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .testimonial-container {
+        display: flex;
+        overflow: hidden;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .testimonial-card {
+        width: 33.33%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .testimonial-card img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-card p {
+        font-size: 18px;
+    }
+
+    /* CSS for slider animation */
+    .testimonial-container.active {
+        animation: slide 8s infinite;
+    }
+
+    @keyframes slide {
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        33.33% {
+            transform: translateX(-100%);
+        }
+
+        66.66% {
+            transform: translateX(-200%);
+        }
+    }
+
+   /* Reset some default styles */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define styles for the footer */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.footer-col ul li a:hover {
+    color: #0073e6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 15px;
+}
+
+.footer-links a i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-links a i:hover {
+    color: #0073e6;
+}
+
+ 
+</style>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1>LOGO</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light h5" aria-current="page" href="#"><i
+                                class="fas fa-home"></i>Home
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light  h5" href="course.html">Courses
+                            <i class="fas fa-book-open"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light  h5" href="about.html">About Us
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light h5" href= "contact.html">Contact
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="Home">
+        <h2 style="color: #fff;">Enhance with your future with TechEducational</h2>
+        <p style="color: #fff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ad id minima ut eveniet
+            beatae, aspernatur
+            sequi nisi? Nulla maiores officiis eius aspernatur suscipit magnam iste aliquid. Facere, obcaecati
+            voluptatem.</p>
+        <div class="btn">
+            <a class="blue" href="about.html">learn more</a>
+            <a class="yellow" href="course.html">visit courses</a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div class="Aboutsap">
+
+        <h1 style="text-align: center; font-size:55px">About us</h1>
+    </div>
+    <hr>
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-image">
+                        <img src="libs.png" alt="img" class="img-fluid" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-16">
+                    <div class="about-text">
+                        <h1 class="text-info">We Provide the Best Education Courses</h1>
+                        <h6>
+                            Welcome to our renowned technology institute, where innovation meets education. We are
+                            dedicated
+                            to shaping the future of tech leaders by providing exceptional learning experiences and
+                            fostering
+                            a culture of creativity, curiosity, and excellence. Our mission is clear: to empower
+                            individuals
+                            with the knowledge and skills needed to thrive in today's ever-evolving technology
+                            landscape. We
+                            strive to bridge the gap between education and industry, preparing our students for
+                            successful
+                            careers and making a positive impact on the world through technology.
+                            In our About Us section, we warmly invite you to discover our organization's unique journey and purpose. Established with a commitment to our core values and guiding philosophy, we've diligently worked toward our mission since our inception. Our dedicated team, comprising individuals who bring expertise and passion to our cause, has been instrumental in achieving significant milestones and recognition along the way. As we continue to make a positive impact on individuals, communities, and causes, we look forward to a future filled with growth, new initiatives, and further opportunities to connect with you. Thank you for considering joining us on this inspiring journey, and we encourage you to explore how you can get involved and support our mission. Feel free to reach out to us for inquiries or collaboration; we'd love to hear from you
+                        </h6>
+                        <button type="button" class="btn btn-info text-light">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h1 style="text-align: center; font-size: 60px; background-color: rgb(14, 219, 255); color: white;">Our courses</h1>
+
+    <div class="course-cards">
+        <!-- Course Card 1 -->
+        <div class="course-card">
+            <div class="course-title">AI</div>
+            <img src="ai.jpg" alt="img" width="100%">
+            <div class="course-price">$99.99</div>
+        </div>
+
+        <!-- Course Card 2 -->
+        <div class="course-card">
+            <div class="course-title">Cyber security</div>
+            <img src="cyber.png" alt="img" width="100%">
+            <div class="course-price">$49.99</div>
+        </div>
+
+        <!-- Course Card 3 -->
+        <div class="course-card">
+            <div class="course-title">Auto cad</div>
+            <img src="auto cad.png" alt="img" width="100%">
+            <div class="course-price">$79.99</div>
+        </div>
+
+        <!-- Course Card 4 -->
+        <div class="course-card">
+            <div class="course-title">Machine Learning</div>
+            <img src="ml.jpg" alt="img" width="100%">
+            <div class="course-price">$129.99</div>
+        </div>
+
+        <!-- Course Card 5 -->
+        <div class="course-card">
+            <div class="course-title">Block chain</div>
+            <img src="block c hain.jpg" alt="img" width="100%">
+            <div class="course-price">$59.99</div>
+        </div>
+
+        <!-- Course Card 6 -->
+        <div class="course-card">
+            <div class="course-title">web Development</div>
+            <img src="webdeeve.png" alt="img" width="100%">
+            <div class="course-price">$89.99</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title">prompt Engineer</div>
+            <img src="pre eng.png" alt="img" width="100%">
+            <div class="course-price">$59.99</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title">App Development</div>
+            <img src="apper.png" alt="img" width="100%">
+            <div class="course-price">$59.99</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title">Ethical course</div>
+            <img src="e h.png" alt="img" width="100%">
+            <div class="course-price">$59.99</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title">Techno learn</div>
+            <img src="bm.png" alt="img" width="100%">
+            <div class="course-price">$59.99</div>
+        </div>
+    </div>
+
+    <!-- Add 4 more course cards here -->
+
+    </div>
+    <br>
+    <h1 style="text-align: center;">our features</h1>
+
+    <div class="feature-cards">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+            <div class="feature-icon">🎓</div>
+            <div class="feature-title">Learn Anywhere</div>
+            <div class="feature-description">Access our courses from anywhere in the world.</div>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+            <div class="feature-icon">💼</div>
+            <div class="feature-title">Career Opportunities</div>
+            <div class="feature-description">Explore new career opportunities with our courses.</div>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+            <div class="feature-icon">🌟</div>
+            <div class="feature-title">Quality Education</div>
+            <div class="feature-description">Experience top-notch education from industry experts.</div>
+        </div>
+    </div>
+    <h1 style="text-align: center; color: #00c3ff;">Our Gallery</h1>
+    <section class="gallery-section">
+        <div class="gallery-item">
+            <img src="student1.png" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="student2.png" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="student 3.png" alt="Gallery Image 3">
+        </div>
+    </section>
+    <h1 style="font-size: 40px; text-align: center;">Our Testimonial</h1>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <img src="uspa.png" alt="User 1">
+            <p>"This technology website has transformed the way I work. It's a game-changer!"</p>
+            <p><strong>John Doe</strong></p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="CIRCUIT.jpg" alt="User 2">
+            <p>"I've been in the tech industry for years, and this site keeps me updated with the latest trends."</p>
+            <p><strong>Jane Smith</strong></p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="CIR 2.jpg" alt="User 3">
+            <p>"The resources and tutorials here have been invaluable in my tech career."</p>
+            <p><strong>Robert Johnson</strong></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to add and remove the 'active' class for sliding effect
+        const testimonialContainer = document.querySelector('.testimonial-container');
+        setInterval(() => {
+            testimonialContainer.classList.toggle('active');
+        }, 8000); // Change slide duration as needed (in milliseconds)
+    </script>
+    <!-- Slider Section -->
+    <section class="slider-section">
+        <h1>Became a pro Now</h1>
+        <img class="slider-image" src="dm.svg" alt="Slider Image" width="30%">
+        <img class="slider-image" src="seo.svg" alt="Slider Image" width="30%">
+        <img class="slider-image" src="app.svg" alt="Slider Image" width="30%">
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>INSTITUTE</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/idex.html#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Admissions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
